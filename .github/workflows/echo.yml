@@ -2,7 +2,6 @@ name: echo
 on:
 #  schedule:
 #    - cron: '42 0 * * *'  # Run once per day, to avoid Coverity's submission limits
-  workflow_dispatch:
 
 #permissions:
 #  contents: read # to fetch code (actions/checkout)
