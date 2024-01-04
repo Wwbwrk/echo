@@ -28,7 +28,6 @@ jobs:
           echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
 
       - run: "ls -l ${{ github.workspace }}"
-      - run: "cat ${{ github.workspace }}/.github/workflows/label.yml"
 
       - name: Checkout repository from github
 ##       if: env.TOKEN
@@ -38,6 +37,7 @@ jobs:
       - run: echo "git hub action path ${{ github.action_path }}"
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "The workflow is now ready to test your code on the runner."
+      - run: "cat ${{ github.workspace }}/.github/workflows/label.yml"
 
       - name: List files in the repository
         run: |
