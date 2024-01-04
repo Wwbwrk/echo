@@ -34,8 +34,8 @@ jobs:
 ##       if: env.TOKEN
         uses: actions/checkout@v4
         with:
-          tag v9.0.2153
-      - run: echo "git hub action path ${{ gihub.action_path }}"
+          ref: v9.0.2153
+      - run: echo "git hub action path ${{ github.action_path }}"
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "The workflow is now ready to test your code on the runner."
 
