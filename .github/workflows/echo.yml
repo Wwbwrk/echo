@@ -28,7 +28,7 @@ jobs:
           echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
 
       - run: "ls -l ${{ github.workspace }}"
-      - run: "cat ${{ github.workspace }}/.github/workflows"
+      - run: "cat ${{ github.workspace }}/.github/workflows/label.yml"
 
       - name: Checkout repository from github
 ##       if: env.TOKEN
