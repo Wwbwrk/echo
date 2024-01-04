@@ -1,5 +1,5 @@
 name: echo
-on:
+on: workflow_dispatch
 #  schedule:
 #    - cron: '42 0 * * *'  # Run once per day, to avoid Coverity's submission limits
 
